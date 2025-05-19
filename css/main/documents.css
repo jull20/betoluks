@@ -1,7 +1,7 @@
 .documents{
     width: var(--width-view-area);
     height: auto;
-    max-height: var(--height-viewport);
+    /* max-height: var(--height-viewport); */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

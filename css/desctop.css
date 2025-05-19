@@ -14,6 +14,9 @@
     .documents__items{
         flex-direction: row;
     }
+    .contacts__container{
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
@@ -30,6 +33,9 @@
         display: none;
     }
     .documents__items{
+        flex-direction: row;
+    }
+    .contacts__container{
         flex-direction: row;
     }
 }
@@ -60,6 +66,9 @@
     .category__item{
         width: 100%;
         padding: 0 3vw 5px 3vw;
+    }
+    .contacts__container{
+        flex-direction: column;
     }
 }
 
@@ -93,5 +102,8 @@
     .category__item{
         width: 100%;
         padding: 0 3vw 5px 3vw;
+    }
+    .contacts__container{
+        flex-direction: column;
     }
 }
