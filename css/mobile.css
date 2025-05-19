@@ -1,0 +1,6 @@
+@media screen and (max-width: 375px) {
+    :root{
+        --width-view-area: 90vw;
+        --shelf-col-3: calc((100% - var(--img-column-gap) * 2) / 3);
+    }
+}

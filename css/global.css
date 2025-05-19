@@ -14,7 +14,6 @@
     --index: calc(1vh + 1vw);
     --text-grey: #333136;
     --img-column-gap: 35px;
-    --shelf-col-3: calc((100% - var(--img-column-gap) * 2) / 3);
     --height-viewport: calc(100vh - 100px);
 }
 

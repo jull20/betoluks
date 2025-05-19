@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/БЛ лого.png">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/main/main.css">
-  <link rel="stylesheet" href="css/main/hero.css">
-  <link rel="stylesheet" href="css/main/shop.css">
-  <link rel="stylesheet" href="css/main/documents.css">
-  <link rel="stylesheet" href="css/main/map.css">
-  <link rel="stylesheet" href="css/main/gallery.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <script defer src="script.js"></script>
-  <title>BETOLUKS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo/БЛ лого.png">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main/main.css">
+    <link rel="stylesheet" href="css/main/hero.css">
+    <link rel="stylesheet" href="css/main/shop.css">
+    <link rel="stylesheet" href="css/main/documents.css">
+    <link rel="stylesheet" href="css/main/contacts.css">
+    <link rel="stylesheet" href="css/main/gallery.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css"> -->
+    <link rel="stylesheet" href="css/desctop.css">
+    <script defer src="script.js"></script>
+    <title>BETOLUKS</title>
 </head>
 <body>
     <header class="header">
+        <!-- <div class="header__container">
+            <div class="logo">
+                <div class="logo__img"><img src="assets/logo/БЛ лого.png" alt=""></div>
+                <h1 class="logo__name">бетолюкс</h1>
+            </div>
+            <div class="list">
+                <div class="list__category">Категории товаров</div>
+                <div class="list__documents">Документы</div>
+                <div class="list__contacts">Контакты</div>
+            </div>
+        </div> -->
         <div class="header__container">
             <div class="logo">
                 <div class="logo__img"><img src="assets/logo/БЛ лого.png" alt=""></div>
@@ -28,8 +42,32 @@
                 <div class="list__documents">Документы</div>
                 <div class="list__contacts">Контакты</div>
             </div>
+            <div class="burger-menu">
+                <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none" >
+                    <line x1="5" y1="18" x2="19" y2="18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="5" y1="13" x2="19" y2="13" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="5" y1="8"  x2="19" y2="8"  stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+        </div>
+        <div class="drop-down-list visibility-hidden">
+            <div class="drop-down-list__blackout"></div>
+            <div class="drop-down-list__content">
+                <div class="menu-close">
+                    <svg width="24px" height="24px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="48" fill="white" fill-opacity="0.01"/>
+                        <path d="M8 8L40 40" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8 40L40 8" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <div class="list__main">Главная</div>
+                <div class="list__category">Категории товаров</div>
+                <div class="list__documents">Документы</div>
+                <div class="list__contacts">Контакты</div>
+            </div>
         </div>
     </header>
+
     <main class="main">
         <div class="main__container">
             <section class="hero">
@@ -106,7 +144,7 @@
 
                     <div data-name="car" class="products__shelf">
                         <div class="item">
-                            <div class="item__img"><img src="assets/img/car_1.JPG" alt=""></div>
+                            <div class="item__img horizontal_img"><img src="assets/img/car_1.JPG" alt=""></div>
                             <div class="item__text">
                                 <p class="item__text_name">Фундаментные блоки ФБС</p>
                                 <p class="item__text_price">Цена по запросу</p>
@@ -114,7 +152,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <div class="item__img"><img src="assets/img/car_2.JPG" alt=""></div>
+                            <div class="item__img horizontal_img"><img src="assets/img/car_2.JPG" alt=""></div>
                             <div class="item__text">
                                 <p class="item__text_name">Фундаментные блоки ФБС</p>
                                 <p class="item__text_price">Цена по запросу</p>
@@ -122,7 +160,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <div class="item__img"><img src="assets/img/car_3.JPG" alt=""></div>
+                            <div class="item__img horizontal_img"><img src="assets/img/car_3.JPG" alt=""></div>
                             <div class="item__text">
                                 <p class="item__text_name">Фундаментные блоки ФБС</p>
                                 <p class="item__text_price">Цена по запросу</p>
@@ -130,7 +168,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <div class="item__img"><img src="assets/img/car_4.JPG" alt=""></div>
+                            <div class="item__img vertical_img"><img src="assets/img/car_4.JPG" alt=""></div>
                             <div class="item__text">
                                 <p class="item__text_name">Фундаментные блоки ФБС</p>
                                 <p class="item__text_price">Цена по запросу</p>
@@ -138,7 +176,7 @@
                             </div>
                         </div>
                         <div class="item">
-                            <div class="item__img"><img src="assets/img/car_5.JPG" alt=""></div>
+                            <div class="item__img vertical_img"><img src="assets/img/car_5.JPG" alt=""></div>
                             <div class="item__text">
                                 <p class="item__text_name">Фундаментные блоки ФБС</p>
                                 <p class="item__text_price">Цена по запросу</p>
@@ -148,6 +186,8 @@
                     </div>
                 </div>
             </section>
+
+            <!-- <hr> -->
 
             <section class="documents">
                 <div class="documents__title"><h1>Документы</h1></div>
@@ -165,7 +205,7 @@
                                 <hr>
                                 <a class="card-link" href="assets/documents/partner.pdf" target="_blank">
                                     Посмотреть
-                                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
+                                    <svg class="arrow" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
                                 </a>
                             </div>
                         </div>
@@ -183,7 +223,7 @@
                                 <hr>
                                 <a class="card-link" href="assets/documents/price.pdf" target="_blank">
                                     Посмотреть
-                                    <svg fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
+                                    <svg class="arrow" fill="white" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
                                 </a>
                             </div>
                         </div>
@@ -191,10 +231,96 @@
                     </div>
                 </div>
             </section>
-            <section class="map"></section>
+
+            <section class="contacts">
+                <div class="contacts__container">
+                    <div class="contacts__content">
+                        <h1 class="contacts__title">Связаться с нами</h1>
+                        <div class="contacts__text">
+                            +7 (812) 9-913-913
+                            betoluxaltunin@yandex.ru
+                            192236, г. Санкт-Петербург, вн.тер.г. Муниципальный округ Волковское, ул. Белы Куна, д. 34, литера. А, помещ. 14-Н, кабинет № 719
+                        </div>
+                        <div class="contacts__links">
+                            <a class="phone" href="tel:+79531421701"><!-- +7 (812) 991-39-13 -->
+                                <svg height="32px" width="32px" viewBox="0 0 64 64">
+                                    <style type="text/css">.st0{fill:#000;} .st1{opacity:0.2;} .st2{fill:#e8e8e8;} .st3{fill:#FFFFFF;}</style>
+                                    <g id="Layer_1"><g><circle class="st0" cx="32" cy="32" r="32"/></g>
+                                        <g class="st1"><g>
+                                                <path class="st2" d="M29,25.3c-0.4-4.8-5.4-7.1-5.6-7.2C23.1,18,22.9,18,22.7,18c-5.8,1-6.6,4.3-6.7,4.5c0,0.2,0,0.4,0,0.6
+                                                    c6.9,21.4,21.2,25.3,25.9,26.6c0.4,0.1,0.7,0.2,0.9,0.3c0.1,0,0.2,0.1,0.3,0.1c0.2,0,0.3,0,0.5-0.1c0.1-0.1,3.5-1.7,4.4-6.9
+                                                    c0-0.2,0-0.5-0.1-0.7c-0.1-0.1-1.9-3.5-6.8-4.7c-0.3-0.1-0.7,0-1,0.2c-1.6,1.3-3.7,2.7-4.6,2.9c-6.2-3-9.7-8.9-9.8-10
+                                                    c-0.1-0.6,1.3-2.8,3-4.6C28.9,26,29,25.6,29,25.3z"/></g></g>
+                                        <g><g><path class="st3" d="M29,23.3c-0.4-4.8-5.4-7.1-5.6-7.2C23.1,16,22.9,16,22.7,16c-5.8,1-6.6,4.3-6.7,4.5c0,0.2,0,0.4,0,0.6
+                                                    c6.9,21.4,21.2,25.3,25.9,26.6c0.4,0.1,0.7,0.2,0.9,0.3c0.1,0,0.2,0.1,0.3,0.1c0.2,0,0.3,0,0.5-0.1c0.1-0.1,3.5-1.7,4.4-6.9
+                                                    c0-0.2,0-0.5-0.1-0.7c-0.1-0.1-1.9-3.5-6.8-4.7c-0.3-0.1-0.7,0-1,0.2c-1.6,1.3-3.7,2.7-4.6,2.9c-6.2-3-9.7-8.9-9.8-10
+                                                    c-0.1-0.6,1.3-2.8,3-4.6C28.9,24,29,23.6,29,23.3z"/></g></g>
+                                    </g>
+                                </svg>
+                            </a> 
+                            <a href="mailto:betoluxaltunin@yandex.ru">
+                                <svg height="32px" width="32px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                                        viewBox="0 0 64 64" xml:space="preserve">
+                                    <style type="text/css">
+                                        .st0{fill:#000;}
+                                        .st1{opacity:1;}
+                                        .st2{fill:#000;}
+                                        .st3{fill:#fff;}
+                                        .st4{fill:#FFFFFF;}
+                                    </style>
+                                    <g id="Layer_1">
+                                        <g>
+                                            <circle class="st0" cx="32" cy="32" r="32"/>
+                                        </g>
+                                        <g>
+                                            <g class="st1">
+                                                <path class="st2" d="M52,44c0,2.2-1.8,4-4,4H16c-2.2,0-4-1.8-4-4V24c0-2.2,1.8-4,4-4h32c2.2,0,4,1.8,4,4V44z"/>
+                                            </g>
+                                            <g>
+                                                <path class="st3" d="M52,42c0,2.2-1.8,4-4,4H16c-2.2,0-4-1.8-4-4V22c0-2.2,1.8-4,4-4h32c2.2,0,4,1.8,4,4V42z"/>
+                                            </g>
+                                            <g class="st1">
+                                                <g>
+                                                    <path class="st2" d="M35.5,30.2c-1.9-2.1-5.1-2.1-7,0L13,43.2c-0.2,0.2-0.3,0.4-0.5,0.6c0.7,1.3,2,2.2,3.4,2.2h32
+                                                        c1.5,0,2.7-0.9,3.4-2.2c-0.1-0.2-0.3-0.4-0.5-0.6L35.5,30.2z"/>
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <path class="st3" d="M35.5,32c-1.9-1.9-5.1-1.9-7,0L13,43.5c-0.2,0.2-0.3,0.3-0.5,0.5c0.7,1.2,2,1.9,3.4,1.9h32
+                                                        c1.5,0,2.7-0.8,3.4-1.9c-0.1-0.2-0.3-0.3-0.5-0.5L35.5,32z"/>
+                                                </g>
+                                            </g>
+                                            <g class="st1">
+                                                <g>
+                                                    <path class="st2" d="M12.6,20.2c0.7-1.3,2-2.2,3.4-2.2h32c1.5,0,2.7,0.9,3.4,2.2c-0.1,0.2-0.3,0.4-0.5,0.6l-15.4,13
+                                                        c-1.9,2.1-5.1,2.1-7,0L12.6,20.2z"/>
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <path class="st4" d="M28.5,32c1.9,1.9,5.1,1.9,7,0L51,20.5c0.2-0.2,0.3-0.3,0.5-0.5c-0.7-1.2-2-1.9-3.4-1.9H16
+                                                        c-1.5,0-2.7,0.8-3.4,1.9c0.1,0.2,0.3,0.3,0.5,0.5L28.5,32z"/>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3Af98cd6dd428518c02a42ed7c28d0af48da57d0aa95f840524564314de1b7d13d&amp;source=constructor"  frameborder="0"></iframe>
+                    </div>
+                </div>
+            </section>
+
             <section class="gallery"></section>
         </div>
     </main>
     <footer></footer>
 </body>
 </html>
+
+
+

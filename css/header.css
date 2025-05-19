@@ -3,7 +3,7 @@
     top: 0;
     width: 100vw;
     height: 80px;
-    background-color: #1c1c1c;
+    background-color: #000000;
     color: white;
     display: flex;
     justify-content: center;
@@ -12,11 +12,12 @@
 }
 
 .header__container{
-    width: 85vw;
+    width: var(--width-header);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .logo{
@@ -41,7 +42,6 @@
 }
 
 .list{
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -49,4 +49,38 @@
     font-size: 14px;
     font-weight: 400;
 
+}
+.drop-down-list{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    font-size: 14px;
+}
+.menu-close{
+    align-self: flex-end;
+}
+.drop-down-list__blackout{
+    width: calc(100% - 260px);
+    background-color: #000000ba;
+}
+.drop-down-list__content{
+    /* min-width: 40%; */
+    width: 260px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3vh 0;
+    padding: 2vh 2vh 0 4vh;
+    text-wrap: nowrap;
+}
+.visibility-hidden{
+    visibility: hidden;
+}
+.block_scroll{
+    overflow-y: hidden;
 }
