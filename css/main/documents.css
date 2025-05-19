@@ -1,0 +1,86 @@
+.documents{
+    width: 75vw;
+    height: var(--height-viewport);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px 0;
+}
+.documents__title h1{
+    font-size: 32px;
+}
+.documents__items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 35px;
+}
+.documents__partner-card,
+.documents__price-list-month{
+    width: calc((100% - 35px)/2);
+    height: 100%;
+    position: relative;
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.card-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.card-text-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0;
+    color: white;
+    margin-bottom: 5%;
+}
+.card-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+hr{
+    width: 100%;
+}
+.card-link{
+    font-size: 18px;
+    color: inherit;
+}
+.bg-img,
+.bg-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg-img{
+    position: relative;
+
+}
+.blackout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.695);
+    z-index: 5;
+    border-radius: 10px;
+
+}
+.bg-img img{
+    position: absolute;
+    z-index: 4;
+}

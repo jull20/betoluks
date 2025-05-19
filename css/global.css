@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../assets/font/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --index: calc(1vh + 1vw);
+    --text-grey: #333136;
+    --img-column-gap: 35px;
+    --shelf-col-3: calc((100% - var(--img-column-gap) * 2) / 3);
+    --height-viewport: calc(100vh - 100px);
+}
+
+html{
+    font-family: "Inter";
+    font-size: 62.5%;
+}
+body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+

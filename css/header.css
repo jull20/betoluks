@@ -1,0 +1,52 @@
+.header{
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.header__container{
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+}
+.logo__img{
+    height: 24px;
+}
+
+.logo__img img{
+    height: 100%;
+}
+.logo__name{
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0 3vw;
+    font-size: 14px;
+    font-weight: 400;
+
+}
