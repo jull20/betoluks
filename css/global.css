@@ -15,6 +15,9 @@
     --text-grey: #333136;
     --img-column-gap: 35px;
     --height-viewport: calc(100vh - 100px);
+    --bg-black: #1c1c1c;
+    --bg-blackout: #1c1c1cba;
+    --bg-contacts: #e8e8e8;
 }
 
 html{

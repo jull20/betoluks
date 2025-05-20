@@ -22,7 +22,7 @@
     border: none;
     background-color: white;
     border-bottom: 1px solid #d7d7d7;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     font-size: 16px;
     font-weight: 400;
 }
@@ -48,20 +48,19 @@
     display: flex;
 }
 .item{
-    width: var(--shelf-col-3);
+    width: var(--shelf-col);
     display: flex;
     flex-direction: column;
     gap: 15px 0; 
 }
 .item__img{
-    /* max-height: 400px; */
-    aspect-ratio: 3/4;
+    aspect-ratio: 6/7;
 }
 .horizontal_img{
     aspect-ratio: 4/3;
 }
 .vertical_img{
-    aspect-ratio: 3/4;
+    aspect-ratio: 6/7;
 }
 .item__img img{
     width: 100%;

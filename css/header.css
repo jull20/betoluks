@@ -3,7 +3,7 @@
     top: 0;
     width: 100vw;
     height: 80px;
-    background-color: #000000;
+    background-color: var(--bg-black);
     color: white;
     display: flex;
     justify-content: center;
@@ -65,12 +65,12 @@
 }
 .drop-down-list__blackout{
     width: calc(100% - 260px);
-    background-color: #000000ba;
+    background-color: var(--bg-blackout);
 }
 .drop-down-list__content{
     /* min-width: 40%; */
     width: 260px;
-    background-color: #000000;
+    background-color: var(--bg-black);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
